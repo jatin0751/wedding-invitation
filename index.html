@@ -1,24 +1,207 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Sharad & Chetna Wedding</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+  <!-- Envelope Screen -->
+
+  <section id="landing">
+
+    <div class="overlay"></div>
+
+    <div class="envelope-wrapper" onclick="openInvitation()">
+
+      <div class="envelope">
+
+        <div class="envelope-top"></div>
+
+        <div class="letter">
+
+          <h2>You Are Invited</h2>
+
+          <p>Tap To Open</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Main Website -->
+
+  <main id="main-content">
+
+    <!-- Hero -->
+
+    <section class="hero section">
+
+      <div class="hero-content">
+
+        <p class="subheading">
+          Together With Their Families
+        </p>
+
+        <h1>
+          Sharad <span>&</span> Chetna
+        </h1>
+
+        <p class="invite-line">
+          Invite you to celebrate their wedding festivities
+        </p>
+
+        <!-- Countdown -->
+
+        <div class="countdown">
+
+          <div class="time-box">
+            <h2 id="days">00</h2>
+            <span>Days</span>
+          </div>
+
+          <div class="time-box">
+            <h2 id="hours">00</h2>
+            <span>Hours</span>
+          </div>
+
+          <div class="time-box">
+            <h2 id="minutes">00</h2>
+            <span>Minutes</span>
+          </div>
+
+          <div class="time-box">
+            <h2 id="seconds">00</h2>
+            <span>Seconds</span>
+          </div>
+
+        </div>
+
+        <h3 class="wedding-date">
+          12 December 2026
+        </h3>
+
+      </div>
+
+    </section>
+
+
+    <!-- Couple -->
+
+    <section class="couple-section section">
+
+      <h2 class="section-title">
+        The Couple
+      </h2>
+
+      <div class="couple-grid">
+
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+            alt="Groom"
+          />
+
+          <h3>Sharad</h3>
+
+          <p>
+            Calm, ambitious and endlessly loving.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+            alt="Bride"
+          />
+
+          <h3>Chetna</h3>
+
+          <p>
+            Elegant, joyful and full of warmth.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Haldi -->
+
+    <section class="event haldi section">
+
+      <div class="event-content">
+
+        <h2>Haldi Ceremony</h2>
+
+        <p class="event-date">
+          10 December 2026
+        </p>
+
+        <p class="event-description">
+          A morning filled with turmeric, marigolds, laughter and love.
+        </p>
+
+        <div class="venue-box">
+
+          <h4>Venue</h4>
+
+          <p>Lakeview Greens Resort</p>
+
+          <p>11:00 AM onwards</p>
+
+        </div>
+
+      </div>
+
     </section>
 
 
     <!-- Sangeet -->
-    <section class="event-section sangeet section">
+
+    <section class="event sangeet section">
 
       <div class="event-content">
 
         <h2>Sangeet Night</h2>
 
-        <p class="event-date">11 December 2026</p>
+        <p class="event-date">
+          11 December 2026
+        </p>
 
-        <p>
-          A magical evening of music, dance, lights, and unforgettable memories.
+        <p class="event-description">
+          Music, dance and a night full of celebration.
         </p>
 
         <div class="venue-box">
+
           <h4>Venue</h4>
+
           <p>Royal Courtyard</p>
+
           <p>7:00 PM onwards</p>
+
         </div>
 
       </div>
@@ -27,22 +210,29 @@
 
 
     <!-- Reception -->
-    <section class="event-section reception section">
+
+    <section class="event reception section">
 
       <div class="event-content">
 
-        <h2>Wedding & Reception</h2>
+        <h2>Wedding Reception</h2>
 
-        <p class="event-date">12 December 2026</p>
+        <p class="event-date">
+          12 December 2026
+        </p>
 
-        <p>
-          Join us as we celebrate love, togetherness, and the beginning of forever.
+        <p class="event-description">
+          Celebrate love, togetherness and forever with us.
         </p>
 
         <div class="venue-box">
+
           <h4>Venue</h4>
+
           <p>The Grand Palace</p>
+
           <p>6:30 PM onwards</p>
+
         </div>
 
       </div>
@@ -51,9 +241,12 @@
 
 
     <!-- Footer -->
-    <section class="footer-section section">
 
-      <h2>We Can't Wait To Celebrate With You</h2>
+    <section class="footer section">
+
+      <h2>
+        We Can't Wait To Celebrate With You
+      </h2>
 
       <p>
         With Love,<br>
@@ -66,5 +259,6 @@
 
 
   <script src="script.js"></script>
+
 </body>
 </html>

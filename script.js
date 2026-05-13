@@ -1,22 +1,22 @@
-function openInvite() {
+function openInvitation(){
 
-  document.getElementById('landing').style.display = 'none';
+  document.getElementById("landing").style.display = "none";
 
-  document.getElementById('mainContent').style.display = 'block';
+  document.getElementById("main-content").style.display = "block";
 
   window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+    top:0,
+    behavior:"smooth"
   });
 
 }
 
 
-// Countdown Timer
+/* Countdown */
 
-const weddingDate = new Date('December 12, 2026 18:30:00').getTime();
+const weddingDate = new Date("December 12, 2026 18:30:00").getTime();
 
-setInterval(() => {
+setInterval(function(){
 
   const now = new Date().getTime();
 
@@ -39,9 +39,9 @@ setInterval(() => {
     1000
   );
 
-  document.getElementById('days').innerHTML = days;
-  document.getElementById('hours').innerHTML = hours;
-  document.getElementById('minutes').innerHTML = minutes;
-  document.getElementById('seconds').innerHTML = seconds;
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
 
-}, 1000);
+},1000);
