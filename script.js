@@ -1,0 +1,47 @@
+function openInvite() {
+
+  document.getElementById('landing').style.display = 'none';
+
+  document.getElementById('mainContent').style.display = 'block';
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+}
+
+
+// Countdown Timer
+
+const weddingDate = new Date('December 12, 2026 18:30:00').getTime();
+
+setInterval(() => {
+
+  const now = new Date().getTime();
+
+  const distance = weddingDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) /
+    (1000 * 60 * 60)
+  );
+
+  const minutes = Math.floor(
+    (distance % (1000 * 60 * 60)) /
+    (1000 * 60)
+  );
+
+  const seconds = Math.floor(
+    (distance % (1000 * 60)) /
+    1000
+  );
+
+  document.getElementById('days').innerHTML = days;
+  document.getElementById('hours').innerHTML = hours;
+  document.getElementById('minutes').innerHTML = minutes;
+  document.getElementById('seconds').innerHTML = seconds;
+
+}, 1000);
